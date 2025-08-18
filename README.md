@@ -7,6 +7,7 @@ A complete SQL-based exploratory data analysis (EDA) project on user mobile beha
 .Data Cleaning & Transformation: Python (Pandas)
 .Database: SQL Server
 .Data Analysis: T-SQL (Window Functions, CTEs, Aggregations, Pivots,sub_query)
+.Data visualization: Power BI
 
 
 ## 📊 Key Insights
@@ -22,3 +23,7 @@ A complete SQL-based exploratory data analysis (EDA) project on user mobile beha
 5.Higher screen time and engagement with streaming and social media correlate with increased monthly e-commerce spending.
 
 6.The project successfully segments users based on their Primary Use, such as 'Entertainment' or 'Education', which helps to understand the main drivers of mobile phone usage.
+
+## 📊 Power BI Dashboard
+[![Dashboard Screenshot](dashboard.png)](https://app.powerbi.com/view?r=eyJrIjoiYTIxMjdlY2MtYjVlOC00MmE3LTlhYTMtNjBkMGE5OGU1NzkxIiwidCI6IjA1OGYzNjAwLTAxMTAtNDIxZC04ZjI1LTdkOGRlZWI0YmViNiJ9)
+
