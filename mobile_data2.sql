@@ -107,4 +107,21 @@ WITH BrandSales AS (
 )
 SELECT TOP 1 WITH TIES location, brand, total_sales
 FROM BrandSales
+
 ORDER BY RANK() OVER (PARTITION BY location ORDER BY total_sales DESC);
+
+-- 8.Identifies which brand retains the most active users
+SELECT brand, COUNT(user_id) AS active_users
+FROM mobile_usage
+WHERE screen_time > (SELECT AVG(screen_time) FROM mobile_usage)
+GROUP BY brand
+ORDER BY active_users DESC;
+
+--9.Identifies low-engagement users (potential churners)
+
+SELECT user_id, location, brand, os,
+       screen_time, data_usage
+FROM mobile_usage
+WHERE screen_time < (SELECT AVG(screen_time) FROM mobile_usage)
+  AND data_usage < (SELECT AVG(data_usage) FROM mobile_usage);
+
